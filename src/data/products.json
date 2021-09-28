@@ -1,0 +1,322 @@
+[
+  {
+    "id": 4,
+    "name": "Mother Asrock H310CM-HDV Socket 1151 8va Gen",
+    "description": "CARACTERISTICAS GENERALES Plataforma Intel Socket 1151 8va Chipsets Principal Intel H310 CONECTIVIDAD Cantidad De Slot Pci 0 Cantidad De Slot Pci-e 16X 1 Cantidad De Slot Pci-e 1X 1 Tecnología Multi Gpu 0 Puertos Sata 4 Puertos Ide 0 Salidas Vga 1 Salidas Hdmi 1 Salidas Dvi 1 Salidas Display Ports 0 Cantidad De Slot M2 0 Placa Wifi Integrada No Placa De Red Gigabit LAN 10/100/1000 Mb/s Puerto Ps/2 No Puertos Usb 2.0 Traseros 4 Puertos Usb 3.0 Traseros 2 Puertos Usb 3.1 Traseros 0 ",
+    "price": "6390",
+    "category": "1",
+    "image": "1629657527158-.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mother Gigabyte H410M H V2 S1200",
+    "description": "CARACTERISTICAS GENERALES Plataforma Intel Socket 1200 Comet Lake Chipsets Principal Intel H410 CONECTIVIDAD Cantidad De Slot Pci 0 Cantidad De Slot Pci-e 16X 1 Cantidad De Slot Pci-e 1X 2 Tecnología Multi Gpu 0 Puertos Sata 4 Puertos Ide 0 Salidas Vga 1 Salidas Hdmi 1 Salidas Dvi 0 Salidas Display Ports 0 Cantidad De Slot M2 1 Placa Wifi Integrada No Sistema De Conexión Rgb RGB Header Placa De Red 1 Gb/s Puerto Ps/2 Si Puertos Usb 2.0 Traseros 4 Puertos Usb 3.0 Traseros 2 Puertos Usb 3.1 Traseros 0 ",
+    "price": "10320",
+    "category": "1",
+    "image": "1629657725513-.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mother MSI MEG Z590 ACE Socket 1200",
+    "description": "CARACTERISTICAS GENERALES Plataforma Intel Socket 1200 Comet Lake,1200 Rocket Lake-S Chipsets Principal Intel Z590 CONECTIVIDAD Cantidad De Slot Pci 0 Cantidad De Slot Pci-e 16X 3 Cantidad De Slot Pci-e 1X 2 Tecnología Multi Gpu SLI,Crossfire Puertos Sata 6 Puertos Ide 0 Salidas Vga 0 Salidas Hdmi 1 Salidas Dvi 0 Salidas Display Ports 0 Cantidad De Slot M2 4 Placa Wifi Integrada Si Sistema De Conexión Rgb ARGB Header,RGB Header Placa De Red 2.5 Gb/s Puerto Ps/2 No Puertos Usb 2.0 Traseros 2 Puertos Usb 3.0 Traseros 4 Puertos Usb 3.1 Traseros 4 ",
+    "price": "66899",
+    "category": "1",
+    "image": "1629657826031-.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Mother Gigabyte Z590 Aorus Xtreme Rev 1.0 S1200",
+    "description": "CARACTERISTICAS GENERALES Plataforma Intel Socket 1200 Rocket Lake-S,1200 Comet Lake Chipsets Principal Intel Z590 CONECTIVIDAD Cantidad De Slot Pci 0 Cantidad De Slot Pci-e 16X 3 Cantidad De Slot Pci-e 1X 0 Tecnología Multi Gpu SLI,Crossfire Puertos Sata 6 Puertos Ide 0 Salidas Vga 0 Salidas Hdmi 0 Salidas Dvi 0 Salidas Display Ports 0 Cantidad De Slot M2 4 Placa Wifi Integrada Si Sistema De Conexión Rgb ARGB Header,RGB Header Placa De Red 10 Gb/s Puerto Ps/2 No Puertos Usb 2.0 Traseros 0 Puertos Usb 3.0 Traseros 0 Puertos Usb 3.1 Traseros 10 ",
+    "price": "120000",
+    "category": "1",
+    "image": "1629657937973-.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Procesador Intel Celeron G4930 3.2GHz 1151 9th Gen",
+    "description": "CARACTERISTICAS GENERALES Modelo Celeron G4930 Socket 1151 Coffe Lake Núcleos 2 Frecuencia 3200.00 mhz Proceso De Fabricación 14 nm Chipset Gpu Intel UHD Graphics 610 Hilos 2 Frecuencia Turbo 3200 mhz Familia Intel Celeron COOLERS Y DISIPADORES Tdp 54 w Incluye Cooler Cpu Si MEMORIA L3 2 mb ",
+    "price": "18500",
+    "category": "1",
+    "image": "1629658102659-.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Procesador Intel Core i5 10600KF 4.8GHz Turbo Socket 1200",
+    "description": "CARACTERISTICAS GENERALES Modelo 10600KF Socket 1200 Comet Lake Núcleos 6 Frecuencia 4100.00 mhz Proceso De Fabricación 14 nm Chipset Gpu NO Posee Gráficos Integrados Hilos 12 Frecuencia Turbo 4800 mhz Familia Intel Core i5 COOLERS Y DISIPADORES Tdp 125 w Incluye Cooler Cpu No MEMORIA L3 12 mb ",
+    "price": "27899",
+    "category": "1",
+    "image": "1629658184410-.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Procesador Intel Core i7 9700KF 4.9GHz Turbo 1151 Coffee Lake",
+    "description": "CARACTERISTICAS GENERALES Modelo i7 9700KF Socket 1151 Coffe Lake Núcleos 8 Frecuencia 3600.00 mhz Proceso De Fabricación 14 nm Chipset Gpu NO Posee Gráficos Integrados Hilos 8 Frecuencia Turbo 4900 mhz Familia Intel Core i7 COOLERS Y DISIPADORES Tdp 95 w Incluye Cooler Cpu No MEMORIA L3 12 mb ",
+    "price": "30394",
+    "category": "1",
+    "image": "1629658258537-.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Procesador Intel Core i9 10900 5.2GHz Turbo 1200 Comet Lake",
+    "description": "CARACTERISTICAS GENERALES Modelo Core i9 10900 Socket 1200 Comet Lake Núcleos 10 Frecuencia 2800.00 mhz Proceso De Fabricación 14 nm Chipset Gpu Intel HD Graphics 630 Hilos 20 Frecuencia Turbo 5200 mhz Familia Intel Core i9 COOLERS Y DISIPADORES Tdp 65 w Incluye Cooler Cpu Si MEMORIA L3 20 mb ",
+    "price": "58026",
+    "category": "1",
+    "image": "1629658322395-.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Placa de Video GeForce MSI GT 710 1GB LP Disipador",
+    "description": "CARACTERISTICAS GENERALES Tipo pcie Chipset Gpu GT 710 Entrada Video No Puente Para Sli/croosfirex - Doble Puente No Características Especiales Otras tecnologías CONECTIVIDAD Vga 1 Dvi Digital 1 Hdmi 1 Rca No S-video 0 Displayports 0 Dvi Analógico/digital 0 ",
+    "price": "8940",
+    "category": "1",
+    "image": "1629658489566-.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Placa de Video AFOX GeForce GTX 1050 Ti 4GB GDDR5 Dual Fan",
+    "description": "CARACTERISTICAS GENERALES Tipo pcie Chipset Gpu GTX 1050 Ti Entrada Video No Puente Para Sli/croosfirex - Doble Puente No CONECTIVIDAD Vga 0 Dvi Digital 1 Hdmi 1 Rca No S-video 0 Displayports 1 Dvi Analógico/digital 0 Usb Type-c 0 ",
+    "price": "38500",
+    "category": "1",
+    "image": "1629658674537-.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Placa de Video MSI GeForce GTX 1650 4GB GDDR6 Ventus XS",
+    "description": "CARACTERISTICAS GENERALES Tipo pcie Chipset Gpu GTX 1650 Entrada Video No Puente Para Sli/croosfirex - Doble Puente No CONECTIVIDAD Vga 0 Dvi Digital 1 Hdmi 1 Rca No S-video 0 Displayports 1 Dvi Analógico/digital 0 Usb Type-c 0 ",
+    "price": "83500",
+    "category": "1",
+    "image": "1629658744451-.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Placa de Video Zotac GeForce RTX 3090 24GB GDDR6X Trinity",
+    "description": "CARACTERISTICAS GENERALES Tipo pcie Chipset Gpu RTX 3090 Entrada Video No Puente Para Sli/croosfirex SLI Doble Puente No Características Especiales Ray Tracing + DLSS CONECTIVIDAD Vga 0 Dvi Digital 0 Hdmi 1 Rca No S-video 0 Displayports 3 Dvi Analógico/digital 0 Usb Type-c 0 ",
+    "price": "445900",
+    "category": "1",
+    "image": "1629658827702-.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Memoria Team DDR4 8GB 3200MHz T-Force Delta RGB Black",
+    "description": "CARACTERISTICAS GENERALES Capacidad 8 gb Velocidad 3200 mhz Tipo DDR4 Cantidad De Memorias 1 Latencia 16 cl Voltaje 1.35 v COMPATIBILIDAD Tipo Sodimm No COOLERS Y DISIPADORES Disipador Si Disipador Alto Si ",
+    "price": "6435",
+    "category": "1",
+    "image": "1629658957098-.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Memoria Kingston DDR3 8GB 1866MHz HyperX Fury Blue",
+    "description": "CARACTERISTICAS GENERALES Capacidad 8 gb Velocidad 1866 mhz Tipo DDR3 Cantidad De Memorias 1 Latencia 10 cl Voltaje 1.50 v COMPATIBILIDAD Tipo Sodimm No COOLERS Y DISIPADORES Disipador Si Disipador Alto No ",
+    "price": "8270",
+    "category": "1",
+    "image": "1629659013907-.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Memoria OLOy DDR4 32GB (2x16GB) Owl Red 3000MHz CL16",
+    "description": "CARACTERISTICAS GENERALES Capacidad 32 gb Velocidad 3000 mhz Tipo DDR4 Cantidad De Memorias 2 Latencia 16 cl Voltaje 1.35 v COMPATIBILIDAD Tipo Sodimm No COOLERS Y DISIPADORES Disipador Si Disipador Alto Si ",
+    "price": "17945",
+    "category": "1",
+    "image": "1629659117366-.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Memoria Team DDR4 64GB (2x32GB) 3200MHz T-Create",
+    "description": "CARACTERISTICAS GENERALES Capacidad 64 gb Velocidad 3200 mhz Tipo DDR4 Cantidad De Memorias 2 Latencia 22 cl Voltaje 1.20 v COMPATIBILIDAD Tipo Sodimm No COOLERS Y DISIPADORES Disipador Si Disipador Alto No ",
+    "price": "37886",
+    "category": "1",
+    "image": "1629659176860-.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Gabinete ASUS TUF GT501 Vidrio Templado Black 3 x Coolers RGB Aura Sync",
+    "description": "CARACTERISTICAS GENERALES Factor Mother ITX,M-ATX,ATX,E-ATX Fuente En Posición Superior No Con Ventana Si Tipo De Ventana Vidrio templado Colores Negro CONECTIVIDAD Usb 2.0 Frontal 0 Usb 3.0 Frontal 2 Usb 3.1 Frontal 0 Usb 3.1 Interno 0 Lector De Tarjetas Frontal No Audio Ac97 Frontal No Audio Hd Frontal Si ",
+    "price": "21500",
+    "category": "2",
+    "image": "1629659563165-.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Gabinete Be Quiet! PURE BASE 500DX White",
+    "description": "CARACTERISTICAS GENERALES Factor Mother ITX,M-ATX,ATX Fuente En Posición Superior No Con Ventana Si Tipo De Ventana Vidrio templado Colores Blanco CONECTIVIDAD Usb 2.0 Frontal 0 Usb 3.0 Frontal 1 Usb 3.1 Frontal 1 Usb 3.1 Interno 1 Lector De Tarjetas Frontal No Audio Ac97 Frontal No Audio Hd Frontal Si ",
+    "price": "11940",
+    "category": "2",
+    "image": "1629661247155-.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Gabinete Corsair Crystal 680X RGB TG Smart Black",
+    "description": "CARACTERISTICAS GENERALES Factor Mother ITX,M-ATX,ATX Fuente En Posición Superior No Con Ventana Si Tipo De Ventana Vidrio templado Colores Negro CONECTIVIDAD Usb 2.0 Frontal 0 Usb 3.0 Frontal 0 Usb 3.1 Frontal 3 Usb 3.1 Interno 2 Lector De Tarjetas Frontal No Audio Ac97 Frontal No Audio Hd Frontal Si ",
+    "price": "39999",
+    "category": "2",
+    "image": "1629661310513-.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Gabinete Lian Li 011 Dynamic Mini White Solo fuente SFX/SFX-L",
+    "description": "CARACTERISTICAS GENERALES Factor Mother ITX,M-ATX,ATX Fuente En Posición Superior No Con Ventana Si Tipo De Ventana Vidrio templado Colores Blanco CONECTIVIDAD Usb 2.0 Frontal 0 Usb 3.0 Frontal 2 Usb 3.1 Frontal 1 Usb 3.1 Interno 1 Lector De Tarjetas Frontal No Audio Ac97 Frontal No Audio Hd Frontal Si ",
+    "price": "15530",
+    "category": "2",
+    "image": "1629661442025-.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Monitor HDC 21.5´ Pulgadas E2150AR VGA+HDMI FULL HD 21.5´",
+    "description": "none",
+    "price": "14680",
+    "category": "2",
+    "image": "1629661553934-.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Monitor LG 22\" 22MK600M IPS Full HD Bordes Ultra Finos",
+    "description": "CARACTERISTICAS GENERALES Tipo De Ilumunación LED Tipo De Panel IPS Pantalla Curva No CONECTIVIDAD Conexión 3.5 Mm - Entrada No Conexión 3.5 Mm - Salida No Hdmi 2 Dvi 0 Vga 1 Display Port 0 Puertos Usb 2.0 0 Puertos Usb 3.0 0 Puertos Usb 3.1 0 Mini Display Port 0 ",
+    "price": "21740",
+    "category": "2",
+    "image": "1629661628555-.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Monitor Portátil Asus ZenScreen 15.6\" MB16AC",
+    "description": "CARACTERISTICAS GENERALES Tipo De Ilumunación LED Tipo De Panel IPS Pantalla Curva No CONECTIVIDAD Conexión 3.5 Mm - Entrada No Conexión 3.5 Mm - Salida No Hdmi 0 Dvi 0 Vga 0 Display Port 0 Puertos Usb 2.0 0 Puertos Usb 3.0 0 Puertos Usb 3.1 1 Mini Display Port 0 ",
+    "price": "43430",
+    "category": "2",
+    "image": "1629661696059-.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Monitor LG Curvo UltraWide 34\" 34WL85C-B QHD IPS 21:9",
+    "description": "CARACTERISTICAS GENERALES Tipo De Ilumunación LED Tipo De Panel IPS Pantalla Curva Si CONECTIVIDAD Conexión 3.5 Mm - Entrada No Conexión 3.5 Mm - Salida Si Hdmi 2 Dvi 0 Vga 0 Display Port 1 Puertos Usb 2.0 0 Puertos Usb 3.0 2 Puertos Usb 3.1 0 Mini Display Port 0 ",
+    "price": "165190",
+    "category": "2",
+    "image": "1629661771608-.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Mouse Glorious Model D Minus - Matte Black",
+    "description": "CARACTERISTICAS GENERALES Color Negro Cantidad De Botones 6 Tip De Switch Omron Tipo De Sensor Óptico Sensor PWM-3360 Tipo Inalámbrico No Orientación Para diestros Agarre Palm Grip No Agarre Claw Grip No Agarre Finger Grip No Agarre Ergonómico Vertical No ",
+    "price": "6000",
+    "category": "2",
+    "image": "1629661858288-.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Mouse Logitech G903 Lightspeed Wireless Gaming 16.000dpi",
+    "description": "CARACTERISTICAS GENERALES Color Negro Cantidad De Botones 11 Tipo De Sensor Óptico Sensor Hero Tipo Inalámbrico Si Orientación Para ambidiestros Agarre Palm Grip Si Agarre Claw Grip Si Agarre Finger Grip Si Agarre Ergonómico Vertical No ",
+    "price": "10620",
+    "category": "2",
+    "image": "1629661917367-.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Teclado Marvo KG880 Retroiluminado Multimedia",
+    "description": "CARACTERISTICAS GENERALES Tipo De Teclado Completo Color Negro Tipo De Mecanismo Semi Mecánico Material Plástico Touchpad No ",
+    "price": "2820",
+    "category": "2",
+    "image": "1629661987578-.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Teclado Mecanico Logitech G915 TKL White RGB Lightspeed Inalambrico",
+    "description": "CARACTERISTICAS GENERALES Tipo De Swich GL Low Profile Tipo De Teclado Compacto sin pad númerico Color Plateado Tipo De Mecanismo Mecánico Switch Especifico Tactile Material Aluminio Touchpad No ",
+    "price": "25530",
+    "category": "2",
+    "image": "1629662081005-.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Parlantes Marvo SG-265 USB 3.5mm RGB",
+    "description": "none",
+    "price": "1950",
+    "category": "2",
+    "image": "1629662154476-.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Auriculares HyperX Gaming Cloud II Wireless",
+    "description": "CARACTERISTICAS GENERALES Audio 7.1 Colores Negro,Rojo Conexión Inalámbrico Con Micrófono Si Tipo De Audio Virtual Tipo Headset CONECTIVIDAD Usb Si Inalámbrico Con Receptor Si Inalámbrico Por Bluetooth No Usb De Alimentación Si ",
+    "price": "19140",
+    "category": "2",
+    "image": "1629662231335-.jpg"
+  },
+  {
+    "id": 34,
+    "name": "WebCam Logitech C920S PRO Full HD",
+    "description": "none",
+    "price": "9900",
+    "category": "2",
+    "image": "1629662300550-.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Notebook HP 14\" Ryzen 3 3250U 4GB 1TB Win10 US",
+    "description": "CARACTERISTICAS GENERALES Color Gris Claro Sistema Operativo Windows 10 Home 64bits Tipo De Cpu AMD Tipo De Gpu AMD Radeon Batería Extraible No Modelo Gpu Radeon Vega 3 Modelo Cpu Ryzen 3 3250U Tipo Notebook Lector De Huellas No Familia Del Procesador AMD RYZEN 3 ALMACENAMIENTO Slot M2 No Capacidad Hd 1000 gb Lector De Memorias Si ",
+    "price": "71490",
+    "category": "3",
+    "image": "1629662435209-.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Notebook ASUS ZenBook UX425EA 14\" Core i5 1135G7 8GB SSD 512GB WIN10",
+    "description": "CARACTERISTICAS GENERALES Color Gris Claro Sistema Operativo Windows 10 Home 64bits Tipo De Cpu Intel Tipo De Gpu Intel HD Graphic Batería Extraible No Modelo Gpu Iris® Xe Graphics Modelo Cpu Core i5 1135G7 Tipo Notebook Lector De Huellas No Familia Del Procesador Intel Core i5 ALMACENAMIENTO Slot M2 Si Capacidad Hd 0 gb Tipo De M.2 NVME Capacidad Sólido 512 gb Lector De Memorias Si ",
+    "price": "143540",
+    "category": "3",
+    "image": "1629662503827-.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Notebook Gamer ASUS TUF FX506 15.6\" Core i5 10300H GTX 1650Ti 4GB 512GB Win10 144Hz",
+    "description": "CARACTERISTICAS GENERALES Color Gris Claro Sistema Operativo Windows 10 Home 64bits Tipo De Cpu Intel Tipo De Gpu nVidia GeForce Batería Extraible No Modelo Gpu GTX 1650Ti Modelo Cpu Core i5 10300H Tipo Notebook Memoria Gpu 4 gb Lector De Huellas No Familia Del Procesador Intel Core i5 ALMACENAMIENTO Slot M2 Si Capacidad Hd 0 gb Tipo De M.2 NVME Capacidad Sólido 512 gb Lector De Memorias No ",
+    "price": "155780",
+    "category": "3",
+    "image": "1629662574685-.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Notebook ASUS ROG ZEPHYRUS 14\" WQHD RYZEN 9 4900HS 16GB 1TB NVMe RTX 2060",
+    "description": "CARACTERISTICAS GENERALES Color Gris Oscuro Sistema Operativo Windows 10 Home 64bits Tipo De Cpu AMD Tipo De Gpu nVidia GeForce Batería Extraible No Modelo Gpu RTX 2060 Max-Q Modelo Cpu RYZEN 9 4900HS Tipo Notebook Memoria Gpu 6 gb Lector De Huellas No Familia Del Procesador AMD RYZEN 9 ALMACENAMIENTO Slot M2 Si Capacidad Hd 0 gb Tipo De M.2 NVME Capacidad Sólido 1000 gb Lector De Memorias No ",
+    "price": "295000",
+    "category": "3",
+    "image": "1629662660632-.jpg"
+  },
+  {
+    "id": 39,
+    "name": "PC GAMER AMD RYZEN 5 3600+B450+16GB+240GB SSD+1TB+1660 SUPER",
+    "description": "CARACTERÍSTICAS DEL EQUIPO  1 | MOTHER B450M AM4 1 | MICRO AMD RYZEN 5 3600 2 | MEMORIA 8GB DDR4 1 | DISCO HDD 1TB SATA3 1 | GABINETE GAMER 1 | VIDEO GEFORCE GTX 1660 SUPER 6GB 1 | FUENTE 600W 80 PLUS BRONZE 1 | HD SSD 240GB",
+    "price": "200710",
+    "category": "3",
+    "image": "1629662969428-.jpg"
+  },
+  {
+    "id": 40,
+    "name": "PC GAMER AMD RYZEN 7 3700X+A520+16GB+240GB SSD+1TB+RTX 2060",
+    "description": "1 | MICRO AMD RYZEN 7 3700X 1 | MOTHER A520 AM4 2 | MEMORIA 8GB 3200 C/RGB 1 | HD SSD 240GB 1 | DISCO HDD 1TB SATA3 1 | VIDEO GEFORCE RTX 2060 6GB 1 | GABINETE GAMER 1 | FUENTE 600W CERTIFICADA 80 PLUS BRONZE",
+    "price": "229060",
+    "category": "3",
+    "image": "1629663047555-.jpg"
+  },
+  {
+    "id": 41,
+    "name": "PC INTEL I7 10700+B460+16GB+480GB SSD+KIT",
+    "description": "1 | MICRO INTEL CORE I7 10700 1 | MOTHER B460M 2 | MEMORIA 8GB DDR4 1 | GABINETE KIT 1 | HD SSD 480GB",
+    "price": "89630",
+    "category": "3",
+    "image": "1629663163517-.jpg"
+  },
+  {
+    "id": 42,
+    "name": "PC INTEL CORE I3 10100 + H410 + 8GB + 1TB + KIT",
+    "description": "1 | MICRO INTEL CORE I3 10100 1 | MOTHER H410M 1 | MEMORIA 8GB DDR4 1 | DISCO HDD 1TB SATA3 1 | GABINETE CON FUENTE, TECLADO, MOUSE Y PARLANTES",
+    "price": "56190",
+    "category": "3",
+    "image": "1629663242763-.jpg"
+  },
+  {
+    "id": 43,
+    "name": "PC AMD RYZEN 9 3900X+X570+32GB+240GB SSD+1TB+RTX 3080",
+    "description": "1 | MICRO AMD RYZEN 9 3900X 1 | MOTHER X570 AM4 2 | MEMORIA 16GB DRR4 3200 C/RGB 1 | HD SSD 240GB 1 | DISCO HDD 1TB SATA3 1 | VIDEO GEFORCE RTX 3080 10GB 1 | GABINETE GAMER ULTRA 1 | FUENTE 700W CERTIFICADA 80 PLUS BRONZE VOLTAJE REAL 1 | WATER COOLER",
+    "price": "418220",
+    "category": "3",
+    "image": "1629663365865-.dib"
+  }
+]

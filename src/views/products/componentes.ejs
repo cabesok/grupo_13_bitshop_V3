@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <%- include ("../partials/head") %>
+
+  <body>
+    
+    <%- include ("../partials/header") %>
+ <div class="showcase-componentes"></div>
+
+    <section class= "container-productos">
+      <% for (let i = 0; i < products.length; i++) { %>
+        
+        <article class="producto">
+          <img src="/uploads/products/<%= products[i].image %>" alt="">
+          <h4><%= products[i].name %></h4>
+          <p>$ <%= products[i].price %></p>
+          <a href="/product/detail/<%= products[i].id %>">Ver</a>
+        </article>
+        
+        <% } %>
+
+    </section>
+ 
+    
+ <%- include ("../partials/footer") %>
+
+    <script src="/public/js/main.js"></script>
+  </body>
+</html>
+

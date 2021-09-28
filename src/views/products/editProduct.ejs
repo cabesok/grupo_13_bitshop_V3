@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  
+
+  <%- include ("../partials/head") %>
+
+
+  <body>
+
+    <%- include ("../partials/header") %>
+
+    <main class="contenedor">
+      <div class="box">
+         <h1>Edita tu producto:</h1>
+         <form class="formulario" action="/product/edit/<%= product.id %>" method="POST" autocomplete="off" enctype="multipart/form-data"> 
+        
+             <div class="inputs">
+                 <label class="nombre" for="nombre">Nombre del producto:</label>
+        
+                 <input name="name" id="nombre" type="text" value="<%= product.name %>"  required/> 
+            </div>
+
+            <div class="inputs">
+                 <label for="precio"> Precio</label>
+                <input name="price"id="precio"type="number"step="0.01"value="<%= product.price %>"required/>
+            </div>
+      <br>
+
+           <div class="form-btn">
+            <label for="Categoria"> Categoria:</label>
+            <select name="category" id="Categoria">
+              <% for (let i = 0 ; i < categories.length; i++) { %>
+                <% if (categories[i].title == product.category_id) { %>
+                  <option value="<%=categories[i].id%>" selected><%=categories[i].title%></option>
+                  <% } %> else <% { %>
+              <option value="<%=categories[i].id%>"><%=categories[i].title%></option>
+              <% } %>
+              <% } %>
+           </select>
+            </div>
+      <br>
+
+            <div class="inputs">
+                 <label for="descripcion">Descripción:</label><br />
+
+                 <textarea name="description"id="descripcion" cols="30" rows="10" required><%= product.description %></textarea>
+            </div>
+
+      <br>
+
+
+            <div class="form-btn">
+                 <label for="adjuntar"> Adjuntar </label>
+                 <input class="adjuntar" type="file" name="image"  id="adjuntar" > 
+            </div>
+
+      <br>
+
+            <div class="botones">
+
+                  <input class="btn" type="submit" value="Enviar" />
+                  <input class="btn" type="reset" value="Borrar datos">
+      
+            </div>  
+
+            
+      </form>
+</div>
+</main>
+
+
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include ("../partials/head") %>
+
+<body>
+
+    <%- include ("../partials/header") %>
+
+    <main>
+        <div class="login-box">
+            <h1>Completa los datos:</h1>
+<form action="" method="POST" class="formulario" id="formulario">
+
+    <!-- Grupo nombre-->
+    <div class="formulario-grupo" id="grupo-nombre">
+        <label for="nombre" class="formulario-label">Nombre</label>
+
+        <div class="formulario-grupo-input">
+            <input type="text" class="formulario-input" name="first_name" id="nombre" placeholder="Nombre">
+            <i class="formulario-validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario-input-error">El nombre solo puede contener letras y espacios.</p>
+    </div>
+
+     <!-- Grupo apellido-->
+     <div class="formulario-grupo" id="grupo-apellido">
+        <label for="apellido" class="formulario-label">Apellido</label>
+
+        <div class="formulario-grupo-input">
+            <input type="text" class="formulario-input" name="last_name" id="apellido" placeholder="Apellido">
+            <i class="formulario-validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario-input-error">El apellido solo puede contener letras y espacios.</p>
+    </div>
+
+
+    <!-- Grupo usuario-->
+    <div class="formulario-grupo" id="grupo-usuario">
+        <label for="usuario" class="formulario-label">Usuario</label>
+
+        <div class="formulario-grupo-input">
+            <input type="text" class="formulario-input" name="user_name" id="usuario" placeholder="Usuario">
+            <i class="formulario-validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario-input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
+    </div>
+
+
+<!-- Grupo password-->
+<div class="formulario-grupo" id="grupo-password">
+    <label for="password" class="formulario-label">Contraseña</label>
+
+    <div class="formulario-grupo-input">
+        <input type="password" class="formulario-input" name="password" id="password" >
+        <i class="formulario-validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario-input-error">La contraseña debe ser de 4 a 12 dígitos.</p>
+</div>
+
+
+<!-- Grupo password 2-->
+<div class="formulario-grupo" id="grupo-password2">
+    <label for="password2" class="formulario-label">Repetir Contraseña</label>
+
+    <div class="formulario-grupo-input">
+        <input type="password" class="formulario-input" name="password2" id="password2" >
+        <i class="formulario-validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario-input-error">Ambas contraseñas deben ser iguales.</p>
+</div>
+
+<!-- Grupo correo-->
+<div class="formulario-grupo" id="grupo-correo">
+    <label for="correo" class="formulario-label">Correo Electrónico</label>
+
+    <div class="formulario-grupo-input">
+        <input type="text" class="formulario-input" name="email" id="correo" placeholder="correo@correo.com">
+        <i class="formulario-validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario-input-error">El correo solo puede contener números, letras, guiones y guión bajo.</p>
+</div>
+
+<div class="formulario-mensaje" id="formulario-mensaje">
+    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+</div>
+
+<div class="form-btn">
+    <label for="adjuntar"> Adjuntar </label>
+    <input class="adjuntar" type="file" name="image"  id="adjuntar" > 
+</div>
+
+<div class="formulario-grupo formulario-grupo-btn-enviar">
+<button type="submit" class="formulario-btn">Enviar</button>
+<p class="formulario-mensaje-exito" id="formulario-mensaje-exito">Formulario enviado exitosamente!</p>
+</div>
+
+
+
+</form>
+</div>
+    </main>
+
+     <!-- <%- include ("../partials/footer") %>  -->
+
+
+    <script src="/js/register.js"></script>
+    <script src="https://kit.fontawesome.com/d97ccaa3ff.js" crossorigin="anonymous"></script>
+</body>
+</html>

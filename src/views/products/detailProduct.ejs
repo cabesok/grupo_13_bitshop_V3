@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("../partials/head") %>
+    <!--FONT DOSIS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet"> 
+
+<body>
+    <%- include ("../partials/header") %> 
+
+<main class="detail">
+
+    <div class="box-image">
+        <!-- <img src="/images/1.jpg" alt=""> -->
+        <img src="/uploads/products/<%= product.image %>" alt="">
+     </div>
+
+    
+        <div class="description">
+            <div class="content">
+                <h1 class="name"><%= product.name %></h1>
+                  <p class="info"><%= product.description %></p>
+                  <p class="price">$ <%= product.price %> </p>
+                  <div class="box-btn">
+                       <button class= "Comprar" type="submit">Comprar</button>
+                             
+                       <a href="/product/edit/<%= product.id %>">
+                       <button>Editar</button>
+                       </a>
+
+                       <form action="/product/delete/<%= product.id %>" method="POST">
+                         <button type="submit">Eliminar</button>
+                        </form>
+                  </div>
+             </div>
+        </div>
+    
+</main>
+
+    
+    <!-- <%- include ("../partials/footer") %>
+ -->
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

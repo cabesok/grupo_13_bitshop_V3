@@ -1,0 +1,246 @@
+:root {
+  --gris: #49434f;
+  --tonic: #a8929e;
+  --blue: #607aab;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   }
+.showcase {
+  width: 100%;
+  height: 520px;
+  background: url("/images/bannerhome.jpg") no-repeat center center/cover;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+    color: #ffffff;
+}
+
+/*---------Barra búsqueda---------*/
+.buscar {
+  position: absolute;
+  top: 400px;
+  padding: 5px;
+  left: 7rem;
+}
+
+.buscar input {
+  width: 0px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #000000;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--tonic);
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buscar:hover input {
+  width: 240px;
+}
+
+.buscar input:focus {
+  width: 240px;
+} 
+/* cuando tenga la clase show (JS) va a mostrar la barra */
+.buscar.show input {
+  width: 240px;
+}
+/* CARRUSEL PRODUCTOS*/
+/*---------Contenedor del titulo y controles--------*/
+
+/*  
+.contenido {
+  
+  min-height: calc(100vh - 80px - 280px);
+} */
+.contenedor-titulos-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contenedor-titulos-controles h3 {
+  color: var(--gris);
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contenedor-titulos-controles .indicadores button {
+  background: #ffffff;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+
+.contenedor-titulos-controles .indicadores button:hover,
+.contenedor-titulos-controles .indicadores button.activo {
+  background: var(--gris);
+}
+
+/*---------Contenedor principal y flechas----------*/
+.ofertas-recomendadas {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+  background: linear-gradient(#ece9e6, #ffffff);
+}
+.ofertas-recomendadas .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+.ofertas-recomendadas .contenedor-principal .flecha-izquierda,
+.ofertas-recomendadas .contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.ofertas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.ofertas-recomendadas .contenedor-principal .flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.ofertas-recomendadas .contenedor-principal .flecha-izquierda {
+  left: 0;
+}
+.ofertas-recomendadas .contenedor-principal .flecha-derecha {
+  right: 0;
+}
+
+/*------------carrusel---------------*/
+.ofertas-recomendadas .contenedor-carrusel {
+  width: 100%;
+  padding: 20px 0; 
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.ofertas-recomendadas .contenedor-carrusel .carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.ofertas-recomendadas .contenedor-carrusel .carrusel .producto {
+  min-width: 33%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*----es clase ".hover", no estado ":hover"--------*/
+.ofertas-recomendadas .contenedor-carrusel .carrusel .producto.hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.ofertas-recomendadas .contenedor-carrusel .carrusel .producto img {
+  width: 100%;
+
+  vertical-align: top;
+}
+
+
+/*----------Media queries-----------*/
+@media (max-width: 1700px) {
+  .showcase {
+    width: 100%;
+    height: 500px;
+    background-position: 8% 10%;
+      }
+      .buscar {
+        z-index: 0;
+        top:auto;
+        left: 8rem;
+}
+}
+@media screen and (max-width: 800px) {
+  .ofertas-recomendadas .contenedor-carrusel {
+    overflow: visible;
+  }
+.ofertas-recomendadas {
+  padding:5px;
+    margin: 0;
+}
+  .ofertas-recomendadas .contenedor-carrusel .carrusel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    
+
+  }
+
+  .ofertas-recomendadas .indicadores,
+  .ofertas-recomendadas .flecha-izquierda,
+  .ofertas-recomendadas .flecha-derecha {
+    display: none;
+  }
+  .buscar {
+    z-index: 0;
+    top:auto;
+    left: 4rem;
+}
+}
+
+@media (max-width: 700px) {
+  .showcase {
+    width: 100%;
+    height: 300px;
+    background-position: 8% 10%;
+      }
+      .buscar {
+        z-index: 0;
+        top:auto;
+        left: 3rem;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.buscar input{
+  height: 30px;
+  padding: 0 10px;
+}
+
+/* cuando tenga la clase show (JS) va a mostrar la barra */
+.buscar.show input {
+  width: 240px;
+}
+}
+

@@ -1,0 +1,36 @@
+[{
+    "id": 1,
+    "first_name": "Alvinia",
+    "last_name": "Grigoryov",
+    "email": "agrigoryov0@flavors.me",
+    "password": "PUMzuiRko",
+    "category": "user",
+    "image": "user_1.jpg"
+  }, 
+  {
+    "id": 2,
+    "first_name": "Ilysa",
+    "last_name": "Maxfield",
+    "email": "imaxfield1@reverbnation.com",
+    "password": "NWqSdBej6D",
+    "category": "user",
+    "image": "user_2.jpg"
+  }, 
+  {
+    "id": 3,
+    "first_name": "Rosamund",
+    "last_name": "Downe",
+    "email": "rdowne2@si.edu",
+    "password": "ayf2ppjqDRX4",
+    "category": "user",
+    "image": "user_3.jpg"
+  }, 
+  {
+    "id": 4,
+    "first_name": "Ernst",
+    "last_name": "Housam",
+    "email": "ehousam3@usnews.com",
+    "password": "lwgmX8X",
+    "category": "user",
+    "image": "user_4.jpg"
+}]

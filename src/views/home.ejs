@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include ("./partials/head") %>
+
+  <body>
+
+    <%- include ("./partials/header.ejs") %>
+
+    
+    <br />
+    <div class="showcase">
+      <div class="buscar">
+        <input type="text" placeholder="Buscar..." />
+        <div class="btn">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+    <main class="contenido">
+      <div class="ofertas-recomendadas cotenedor">
+        <div class="contenedor-titulos-controles">
+          <h3># Destacados</h3>
+
+          <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+          <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+            <i class="fas fa-angle-left"></i>
+          </button>
+
+          <!--Estructura carrusel, modificar enlaces e imagenes con los productos-->
+          <div class="contenedor-carrusel">
+            <div class="carrusel">
+              <div class="producto">
+                <a href="#"> <img src="/images/1.jpg" alt="" /></a>
+              </div>
+              <div class="producto">
+                <a href="#"> <img src="/images/2.jpg" alt="" /></a>
+              </div>
+              <div class="producto">
+                <a href="#"> <img src="/images/3.jpg" alt="" /></a>
+              </div>
+              <div class="producto">
+                <a href="#"> <img src="/images/4.jpg" alt="" /></a>
+              </div>
+              <div class="producto">
+                <a href="#"> <img src="/images/5.jpg" alt="" /></a>
+              </div>
+              <div class="producto">
+                <a href="#"> <img src="/images/1.jpg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+
+          <button role="button" id="flecha-derecha" class="flecha-derecha">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    
+    <%- include ("./partials/footer.ejs") %>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
