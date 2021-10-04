@@ -4,8 +4,8 @@ const user = require("../controllers/user");
 /* const userRegisterMiddleware = require("../middlewares/userRegisterMiddleware")
 const userLoginMiddleware = require("../middlewares/userLoginMiddleware") */
 
-router.get("/login", user.login);    
-router.get("/register", user.register);  
+router.get("/login", user.login);
+router.get("/register", user.register);
 
 /* router.post("/access", userLoginMiddleware ,controller.access);
 router.post("/save", userRegisterMiddleware ,controller.save); */

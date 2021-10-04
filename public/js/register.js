@@ -1,7 +1,5 @@
-
 const formulario= document.getElementById('formulario');
 const inputs= document.querySelectorAll('#formulario input');
-
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
