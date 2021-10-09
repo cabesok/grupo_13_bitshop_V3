@@ -4,35 +4,35 @@ const inputs= document.querySelectorAll('#formulario input');
 
 
 const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+	user_name: /^[a-zA-Z0-9\_\-]{4,16}$/,
+	first_name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    last_name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
 	password: /^.{4,12}$/,
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 }
 
 
 const campos = {
-	usuario: false,
-	nombre: false,
+	user_name: false,
+	first_name: false,
 	password: false,
-	correo: false,
-	apellido: false
+	email: false,
+	last_name: false
 }
 
 
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
-    case "usuario":
-      validarCampo(expresiones.usuario, e.target, "usuario");
+    case "user_name":
+      validarCampo(expresiones.user_name, e.target, "user_name");
 
       break;
-    case "nombre":
-      validarCampo(expresiones.nombre, e.target, "nombre");
+    case "first_name":
+      validarCampo(expresiones.first_name, e.target, "first_name");
       break;
-    case "apellido":
-      validarCampo(expresiones.apellido, e.target, "apellido");
+    case "last_name":
+      validarCampo(expresiones.last_name, e.target, "last_name");
       break;
     case "password":
       validarCampo(expresiones.password, e.target, "password");
@@ -41,8 +41,8 @@ const validarFormulario = (e) => {
     case "password2":
       validarPassword2();
       break;
-    case "correo":
-      validarCampo(expresiones.correo, e.target, "correo");
+    case "email":
+      validarCampo(expresiones.email, e.target, "email");
       break;
   }
 }
@@ -94,10 +94,10 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
+/* formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-    if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.apellido){
+    if(campos.user_name && campos.first_name && campos.password && campos.email && campos.last_name){
 		formulario.reset();
 
 		document.getElementById('formulario-mensaje-exito').classList.add('formulario-mensaje-exito-activo');
@@ -111,4 +111,4 @@ formulario.addEventListener('submit', (e) => {
 	} else {
 		document.getElementById('formulario-mensaje').classList.add('formulario-mensaje-activo');
 	}
-});
+}); */

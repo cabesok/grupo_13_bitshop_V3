@@ -2,19 +2,25 @@ let db = require("../database/models");
 
 let productsController = {
     componentes: function(req, res) {
-        db.Products.findAll()
+        db.Products.findAll({where: {
+            category_id: 1
+        }})
         .then(function(products) {
         res.render("products/componentes", {style: "componentes.css", title: "Componentes", products:products})
     })
 },
     perifericos: function(req, res) {
-        db.Products.findAll()
+        db.Products.findAll({where: {
+            category_id: 2
+        }})
         .then(function(products) {
         res.render("products/perifericos", {style: "perifericos.css", title: "Perifericos",products:products})
 })
 },
     pcs: function(req, res) {
-        db.Products.findAll()
+        db.Products.findAll({where: {
+            category_id: 3
+        }})
         .then(function(products) {
         res.render("products/pcs", {style: "pcs.css", title: "PCs",products:products})
 })
@@ -59,18 +65,24 @@ let productsController = {
             })
     },
 
-    actualizar: function(req, res) {
+    actualizar: async function(req, res) {
+        let productoAEditar = await db.Products.findOne({where: {
+            id: req.params.id
+        }})
+
+        let imagen = typeof req.file == "undefined" ? productoAEditar.image : req.file.filename;
+
+        console.log(imagen);
+
         db.Products.update({
             name: req.body.name,
             description: req.body.description,
             price: req.body.price,
-            image: req.file.filename, // req.file.image ?
+            image: imagen , // req.file.image ?
             category_id: req.body.category
         }, {where: {
             id: req.params.id
-        }})
-        
-        res.redirect("/product/detail/" + req.params.id);
+        }}).then(data => res.redirect("/product/detail/" + req.params.id));
 },
 
     delete: function(req, res) {

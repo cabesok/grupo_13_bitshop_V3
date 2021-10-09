@@ -31,7 +31,7 @@ router.get("/detail/:id", productsController.detail);
 router.get("/edit/:id", productsController.edit);
 
 router.post("/crear", upload.single("image"), productsController.guardar);
-router.post("/edit/:id", productsController.actualizar);
+router.post("/edit/:id", upload.single("image"), productsController.actualizar);
 router.delete("/delete/:id", productsController.delete);
 
 // Rutas para base da datos JSON

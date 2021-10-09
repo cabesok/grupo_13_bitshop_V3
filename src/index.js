@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const methodOverride = require('method-override');
 const app = express();
+const session = require("express-session");
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
 
 // App Server
 app.set("port",process.env.PORT || 3000);
@@ -18,8 +20,8 @@ app.set("views", path.resolve(__dirname, "./views"));
 app.use(express.urlencoded({extended:false}));
 app.use(methodOverride("_method"));
 app.use(express.json());
-
-
+app.use(session({secret: "Secreto", resave: false, saveUninitialized: false}));
+app.use(userLoggedMiddleware);
 
 // App Routes
 const home = require("./routes/home");

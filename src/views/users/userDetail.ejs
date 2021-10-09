@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("../partials/head") %>
+    <!--FONT DOSIS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet"> 
+
+<body>
+    <%- include ("../partials/header") %> 
+
+<main class="detail">
+
+    <div class="box-image">
+        <!-- <img src="/images/1.jpg" alt=""> -->
+        <img src="/uploads/users/<%= user.image %>" alt="">
+     </div>
+
+    
+        <div class="description">
+            <div class="content">
+                <h1 class="name"><%= user.user_name %></h1>
+                <h2 class="name"><%= user.first_name + " " + user.last_name %></h2>
+                  
+                  <div class="box-btn">
+                       
+                             
+                       <a href="/product/edit/<%= product.id %>">
+                       <button>Editar</button>
+                       </a>
+
+                       
+                  </div>
+             </div>
+        </div>
+    
+</main>
+
+    
+    <!-- <%- include ("../partials/footer") %>
+ -->
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

@@ -9,18 +9,27 @@
     <%- include ("../partials/header") %>
 
     <main>
-
+        <!-- <% if (typeof errors != "undefined"){ %>
+            <p style="color:red">ERROR</p>
+            <ul>
+                <% for (let i = 0; i < errors.length; i++){ %>
+                    <li>
+                        <%= errors[i].msg %>
+                    </li>
+                <% } %>
+            </ul>
+        <% } %> -->
 
         <div class="login-box">
 
             <h1>Ingresa tu usuario:</h1>
-             <form action="" method="POST" class="formulario" id="formulario">
+             <form action="/user/login" method="POST" class="formulario" id="formulario">
          <!-- Grupo usuario-->
-        <div class="formulario-grupo" id="grupo-usuario">
-         <label for="usuario" class="formulario-label">Usuario</label>
+        <div class="formulario-grupo" id="grupo-user_name">
+         <label for="user_name" class="formulario-label">Usuario</label>
 
         <div class="formulario-grupo-input">
-            <input type="text" class="formulario-input" name="usuario" id="usuario" placeholder="Usuario" required>
+            <input type="text" class="formulario-input" name="user_name" id="user_name" placeholder="Usuario" required>
             <i class="formulario-validacion-estado fas fa-times-circle"></i>
         </div>
         <p class="formulario-input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
@@ -53,6 +62,6 @@
 
 </body>
 
-<script src="/js/login.js"></script>
+<!-- <script src="/js/login.js"></script> -->
 <script src="https://kit.fontawesome.com/d97ccaa3ff.js" crossorigin="anonymous"></script>
 </html>
