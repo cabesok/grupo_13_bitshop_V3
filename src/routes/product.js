@@ -27,6 +27,7 @@ router.get("/componentes", productsController.componentes);
 router.get("/perifericos", productsController.perifericos);
 router.get("/pcs", productsController.pcs); 
 router.get("/crear", productsController.crear);
+router.get("/buscar", productsController.buscar);
 router.get("/detail/:id", productsController.detail); 
 router.get("/edit/:id", productsController.edit);
 

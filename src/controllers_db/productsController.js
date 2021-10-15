@@ -1,4 +1,6 @@
 let db = require("../database/models");
+//const Op = Sequelize.Op
+const {Op} = require("sequelize");
 
 let productsController = {
     componentes: function(req, res) {
@@ -92,7 +94,20 @@ let productsController = {
             }
         })
         res.redirect("/")
-    }
+    },
+
+    buscar: function(req, res) {
+        db.Products.findAll({
+            where: {
+                name: {
+                    [Op.like]: '%' + req.query.search + '%' }
+            }
+        })
+        .then(function(products) {
+        res.render("products/buscar", {style: "buscar.css", title: "Buscar", products:products})
+})
+}
+
 };
 
 module.exports = productsController;

@@ -3,10 +3,11 @@ const path = require("path");
 const methodOverride = require('method-override');
 const app = express();
 const session = require("express-session");
-const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware")
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
+const cors = require("cors")
 
 // App Server
-app.set("port",process.env.PORT || 3000);
+app.set("port",process.env.PORT || 3001);
 app.listen(app.get("port"),() => console.log("Server Start http://localhost:" + app.get("port")));
 
 // App Access Public
@@ -20,6 +21,7 @@ app.set("views", path.resolve(__dirname, "./views"));
 app.use(express.urlencoded({extended:false}));
 app.use(methodOverride("_method"));
 app.use(express.json());
+app.use(cors());
 app.use(session({secret: "Secreto", resave: false, saveUninitialized: false}));
 app.use(userLoggedMiddleware);
 
@@ -33,8 +35,13 @@ app.use("/product", product);
 const user = require("./routes/user");
 app.use("/user", user);
 
+// API routes
 
+const productApi = require("./routes/api/productApi");
+app.use("/productApi", productApi);
 
+const userApi = require("./routes/api/userApi");
+app.use("/userApi", userApi);
 
 
 

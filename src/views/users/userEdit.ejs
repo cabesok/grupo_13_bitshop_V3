@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include ("../partials/head") %>
+
+<body>
+
+    <%- include ("../partials/header") %>
+
+    <main>
+
+        <!-- <% if (typeof errors != "undefined"){ %>
+            <p style="color:red">ERROR</p>
+            <ul>
+                <% for (let i = 0; i < errors.length; i++){ %>
+                    <li>
+                        <%= errors[i].msg %>
+                    </li>
+                <% } %>
+            </ul>
+        <% } %> -->
+
+        <!-- <% if (locals && locals.errors){ %>
+            <% for (let error in errors){ %>
+                <li>
+                    <%= errors[error].msg %>
+                </li>
+            <% } %>
+        <% } %> -->
+        <div class="login-box">
+            <h1>Completa los datos:</h1>
+
+            <% if (locals && locals.errors){        
+                errors.forEach(error => { %>
+                    <p style="color:red"> <%= error.msg %> </p>
+                <% })
+            } %>
+
+<form action="/user/edit/<%= user.id %>?_method=PUT" method="POST" class="formulario" id="formulario" enctype="multipart/form-data">
+
+    <!-- Grupo nombre-->
+    <div class="formulario-grupo" id="grupo-first_name">
+        <label for="first_name" class="formulario-label">Nombre</label>
+
+        <div class="formulario-grupo-input">
+            <input type="text" class="formulario-input" name="first_name" id="first_name" placeholder="Nombre" value="<%= user.first_name %>" >
+            <i class="formulario-validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario-input-error">El nombre solo puede contener letras y espacios.</p>
+    </div>
+
+     <!-- Grupo apellido-->
+     <div class="formulario-grupo" id="grupo-last_name">
+        <label for="last_name" class="formulario-label">Apellido</label>
+
+        <div class="formulario-grupo-input">
+            <input type="text" class="formulario-input" name="last_name" id="last_name" placeholder="Apellido" value="<%= user.last_name %>">
+            <i class="formulario-validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario-input-error">El apellido solo puede contener letras y espacios.</p>
+    </div>
+
+
+    <!-- Grupo usuario-->
+    <div class="formulario-grupo" id="grupo-user_name">
+        <label for="user_name" class="formulario-label">Usuario</label>
+
+        <div class="formulario-grupo-input">
+            <input type="text" class="formulario-input" name="user_name" id="user_name" placeholder="Usuario" value="<%= user.user_name %>">
+            <i class="formulario-validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario-input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
+    </div>
+
+
+<!-- Grupo password-->
+<div class="formulario-grupo" id="grupo-password">
+    <label for="password" class="formulario-label">Contraseña</label>
+
+    <div class="formulario-grupo-input">
+        <input type="password" class="formulario-input" name="password" id="password" >
+        <i class="formulario-validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario-input-error">La contraseña debe ser de 4 a 12 dígitos.</p>
+</div>
+
+
+<!-- Grupo password 2-->
+<div class="formulario-grupo" id="grupo-password2">
+    <label for="password2" class="formulario-label">Repetir Contraseña</label>
+
+    <div class="formulario-grupo-input">
+        <input type="password" class="formulario-input" name="password2" id="password2" >
+        <i class="formulario-validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario-input-error">Ambas contraseñas deben ser iguales.</p>
+</div>
+
+<!-- Grupo correo-->
+<div class="formulario-grupo" id="grupo-email">
+    <label for="email" class="formulario-label">Correo Electrónico</label>
+
+    <div class="formulario-grupo-input">
+        <input type="text" class="formulario-input" name="email" id="email" placeholder="correo@correo.com" value="<%= user.email %>" >
+        <i class="formulario-validacion-estado fas fa-times-circle"></i>
+    </div>
+    <p class="formulario-input-error">El correo solo puede contener números, letras, guiones y guión bajo.</p>
+</div>
+
+<div class="formulario-mensaje" id="formulario-mensaje">
+    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+</div>
+
+<div class="form-btn">
+    <label for="adjuntar"> Adjuntar </label>
+    <input class="adjuntar" type="file" name="image"  id="adjuntar" > 
+</div>
+
+<div class="formulario-grupo formulario-grupo-btn-enviar">
+<button type="submit" class="formulario-btn">Enviar</button>
+<p class="formulario-mensaje-exito" id="formulario-mensaje-exito">Formulario enviado exitosamente!</p>
+</div>
+
+
+
+</form>
+</div>
+    </main>
+
+     <!-- <%- include ("../partials/footer") %>  -->
+
+
+    <script src="/js/register.js"></script>
+    <script src="https://kit.fontawesome.com/d97ccaa3ff.js" crossorigin="anonymous"></script>
+</body>
+</html>

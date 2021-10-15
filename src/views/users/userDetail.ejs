@@ -12,22 +12,37 @@
 <main class="detail">
 
     <div class="box-image">
-        <!-- <img src="/images/1.jpg" alt=""> -->
+        
         <img src="/uploads/users/<%= user.image %>" alt="">
      </div>
 
     
         <div class="description">
             <div class="content">
-                <h1 class="name"><%= user.user_name %></h1>
-                <h2 class="name"><%= user.first_name + " " + user.last_name %></h2>
+                <h1 class="name">Usuario: <%= user.user_name %></h1>
+                <h2 class="name">Nombre: <%= user.first_name + " " + user.last_name %></h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                   
                   <div class="box-btn">
                        
                              
-                       <a href="/product/edit/<%= product.id %>">
+                       <a href="/user/userEdit/<%= user.id %>">
                        <button>Editar</button>
                        </a>
+
+                       <form action="/user/delete/<%= user.id %>?_method=DELETE" method="post">
+                        <button type="submit">Eliminar</button>
+                        </form>
+                        
+                        <form action="/user/logout" method="post">
+                            <button type="submit">Logout</button>
+                            </form>
+
+                        
 
                        
                   </div>

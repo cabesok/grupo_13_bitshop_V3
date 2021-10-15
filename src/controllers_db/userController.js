@@ -9,6 +9,8 @@ module.exports = {
     register: (req, res) => res.render("users/register", {style: "register.css", title: "User | Register"}),
 
     userDetail: (req, res) => res.render("users/userDetail", {style: "userDetail.css", title: "User | Detail", user: req.session.userLogged}),
+    
+    userEdit: (req, res) => res.render("users/userEdit", {style: "userEdit.css", title: "User | Edit", user: req.session.userLogged}),
 
     logout: (req, res) => {
         req.session.destroy();
@@ -38,7 +40,7 @@ module.exports = {
                 
                 
                 } else {
-                return res.render("login"/* , {errors: errors.errors} */);
+                return res.render("users/login", {style: "login.css", title: "User | Login"}/* , {errors: errors.errors} */);
                 /* return res.render("login", {errors: {email:{msg: "No se encuentra el email en la base de datos"}}}); */
             }
         },
@@ -77,6 +79,37 @@ module.exports = {
             title: "User | Register",
             errors: errors.array(), 
             oldData: req.body}) // errors.mapped() ?
-} }
+} },
+
+delete: function(req, res) {
+    db.Users.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    res.redirect("/")
+},
+
+edit: async function(req, res) {
+    let usuarioAEditar = await db.Users.findOne({where: {
+        id: req.params.id
+    }})
+
+    let imagen = typeof req.file == "undefined" ? usuarioAEditar.image : req.file.filename;
+
+    /* console.log(imagen); */
+
+    db.Users.update({
+        user_name: req.body.user_name,
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        email: req.body.email,
+        password: bcrypt.hashSync(req.body.password, 10),
+        image: imagen,
+        category_id: req.body.category
+    }, {where: {
+        id: req.params.id
+    }}).then(data => res.redirect("/user/userDetail/" + req.params.id));
+}
     
 }

@@ -11,10 +11,16 @@
     <br />
     <div class="showcase">
       <div class="buscar">
-        <input type="text" placeholder="Buscar..." />
-        <div class="btn">
-          <i class="fas fa-search"></i>
-        </div>
+
+        <form action="/product/buscar" method="GET">
+          <input type="text" name="search" placeholder="Buscar..." />
+          <button type="submit">
+            <div class="btn">
+              <i class="fas fa-search"></i>
+            </div>
+          </button>
+        </form>
+
       </div>
     </div>
     <main class="contenido">

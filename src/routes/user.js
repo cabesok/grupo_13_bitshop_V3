@@ -22,11 +22,14 @@ var storage = multer.diskStorage({
 
 router.get("/login", guestMiddleware, userController.login);    
 router.get("/register", guestMiddleware, userController.register);  
-router.get("/userDetail", authMiddleware, userController.userDetail); 
+router.get("/userDetail/:id?", authMiddleware, userController.userDetail);
+router.get("/userEdit/:id", authMiddleware, userController.userEdit); 
 
 router.post("/login", userController.access);
 router.post("/save",  upload.single("image"), userRegisterMiddleware ,userController.save);
+router.put("/edit/:id", upload.single("image"), userController.edit);
 router.post("/logout", userController.logout);
+router.delete("/delete/:id", userController.delete);
 
 module.exports = router;
 
