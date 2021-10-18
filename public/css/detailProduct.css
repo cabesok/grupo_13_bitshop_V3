@@ -15,7 +15,7 @@ body {
 
 .detail {
     position: relative;
-    width: 1000px;
+    width: 50%;
     min-width: 350px;
     min-height: 500px;
     height: auto;
@@ -27,6 +27,8 @@ body {
 
 .box-image {
 width: 40%;
+min-width: 500px;
+padding: 4rem;
 height: 500px;
 background: white;
 position: relative;
@@ -70,18 +72,12 @@ font-weight: 60;
 margin-bottom: 20px;
 
 }
-/* 
-.box-btn {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
- */
+
 
  .box-btn {
 display:flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 text-align: center;
 margin: 10px;
@@ -119,8 +115,10 @@ button:hover {
 }
 
     .box-image {
-        width: 90%;
-        height: 300px;
+        width: 85%;
+        height: 250px;
+        padding: 1rem;
+        
     }
 
     .description {

@@ -2,6 +2,9 @@ let db = require("../database/models");
 //const Op = Sequelize.Op
 const {Op} = require("sequelize");
 
+
+
+    
 let productsController = {
     componentes: function(req, res) {
         db.Products.findAll({where: {
@@ -27,6 +30,7 @@ let productsController = {
         res.render("products/pcs", {style: "pcs.css", title: "PCs",products:products})
 })
 },
+    
     crear: function(req, res) {
         db.Productscategories.findAll()
         .then(function(category) {

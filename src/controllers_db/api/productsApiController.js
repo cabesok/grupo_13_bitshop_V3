@@ -3,53 +3,34 @@
 let db = require("../../database/models");
 
 module.exports = {
-    /* list: async (req, res) => {
-        fetch("url donde esta la data")
-            .then(response => response.json())
-            .then(countries => {
-                return res.render("la vista que usamos", { countries })
-            })
-
-            // para traer 2 apis a la vez :
-            let countries = await fetch("url donde esta la data").then(response => response.json());
-            let provincias = await fetch("url donde esta la data").then(response => response.json());
-
-            return res.render("la vista que usamos", {countries, provincias});
-    }, */
-
-    /* list: function(req, res) {
-        db.Products
-        .findAll()
-        .then(function(products) {
-        return res.status(200).json({
-            total: products.length,
-            totalPorCategoria: {},
-            data: products,
-            status: 200
-        })
-    })
-}, */
 
 list: async function(req, res) {
 
-    let cat1 = await db.Products
+    /* let cat1 = await db.Products
     .findAll({where: {category_id: 1}})
 
     let cat2 = await db.Products
     .findAll({where: {category_id: 2}})
 
     let cat3 = await db.Products
-    .findAll({where: {category_id: 3}})
+    .findAll({where: {category_id: 3}}) */
 
 
 
     db.Products
-    .findAll()
+    .findAll({
+        include: [{association:"categoria"}]
+    })
     .then(function(products) {
+
+        
         // aca va el products.map(product => product[i].push(detail:{}))
+
+        //let productDetail = products.map(product => {product.detail = })
+
     return res.status(200).json({
         total: products.length,
-        totalPorCategoria: {cat1, cat2, cat3},
+        /* totalPorCategoria: {cat1, cat2, cat3}, */
         data: products,
         status: 200
     })
@@ -58,7 +39,9 @@ list: async function(req, res) {
 
     productsCategories: function(req, res) {
         db.Productscategories
-        .findAll()
+        .findAll({
+            include: [{association:"productos"}]
+        })
         .then(function(categories) {
         return res.status(200).json({
             total: categories.length,
@@ -74,6 +57,7 @@ list: async function(req, res) {
         .then(function(product) {
         return res.status(200).json({
             data: product,
+            imageUrl: "localhost:3001/public/uploads/products/${product.image}",
             status: 200
         })
     })
@@ -109,3 +93,42 @@ list: async function(req, res) {
 
 
 }
+
+
+
+/* list: async (req, res) => {
+        fetch("url donde esta la data")
+            .then(response => response.json())
+            .then(countries => {
+                return res.render("la vista que usamos", { countries })
+            })
+
+            // para traer 2 apis a la vez :
+            let countries = await fetch("url donde esta la data").then(response => response.json());
+            let provincias = await fetch("url donde esta la data").then(response => response.json());
+
+            return res.render("la vista que usamos", {countries, provincias});
+    }, */
+
+        /* list: function(req, res) {
+        db.Products
+        .findAll()
+        .then(function(products) {
+        return res.status(200).json({
+            total: products.length,
+            totalPorCategoria: {},
+            data: products,
+            status: 200
+        })
+    })
+}, */
+/* list2: function(req, res) {
+    db.Products.findAll({
+        include: [{association:"categoria"}]
+    })
+    .then (function (products) {
+        res.render("")
+})
+
+      //<%=products[i].categoria.name%>     
+}, */
