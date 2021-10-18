@@ -3,14 +3,14 @@ const inputs= document.querySelectorAll('#formulario input');
 
 
 const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/,
+	user_name: /^[a-zA-Z0-9\_\-]{4,16}$/,
 	password: /^.{4,12}$/,
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 }
 
 
 const campos = {
-	usuario: false,
+	user_name: false,
 	password: false,
 	correo: false,
 	}
@@ -19,8 +19,8 @@ const campos = {
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
-    case "usuario":
-      validarCampo(expresiones.usuario, e.target, "usuario");
+    case "user_name":
+      validarCampo(expresiones.user_name, e.target, "user_name");
 
       break;
 

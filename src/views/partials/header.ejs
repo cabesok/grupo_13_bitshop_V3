@@ -1,5 +1,6 @@
 
 <header>
+  
   <div class="menu-btn">
    <i class="fas fa-bars"></i>
   </div>
@@ -13,11 +14,26 @@
           <li><a href="#">Contacto</a></li>
         </ul>
         <ul class="nav-menu-user">
+          <% if (locals.userLogged){ %>
+           
+               <a href="/user/userDetail" >
+                
+                  <img src="/uploads/users/<%= locals.userLogged.image %>" width="40" style="border-radius: 100%;">
+                  
+                  <p><%= locals.userLogged.user_name %></p>
+                  
+               </a>
+  
+            <% } else { %>
           <li><a href="/user/login">Ingresar</a></li>
           <li><a href="/user/register">Registrarse</a></li>
+          <% } %>
         </ul>
       </nav>
     </div>
+
+
+    
   </header>
   <script src="/js/header.js"></script>
   <script
