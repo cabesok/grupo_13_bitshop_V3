@@ -6,31 +6,13 @@ module.exports = {
 
 list: async function(req, res) {
 
-    /* let cat1 = await db.Products
-    .findAll({where: {category_id: 1}})
-
-    let cat2 = await db.Products
-    .findAll({where: {category_id: 2}})
-
-    let cat3 = await db.Products
-    .findAll({where: {category_id: 3}}) */
-
-
-
     db.Products
     .findAll({
         include: [{association:"categoria"}]
     })
     .then(function(products) {
-
-        
-        // aca va el products.map(product => product[i].push(detail:{}))
-
-        //let productDetail = products.map(product => {product.detail = })
-
     return res.status(200).json({
         total: products.length,
-        /* totalPorCategoria: {cat1, cat2, cat3}, */
         data: products,
         status: 200
     })
@@ -57,7 +39,7 @@ list: async function(req, res) {
         .then(function(product) {
         return res.status(200).json({
             data: product,
-            imageUrl: "localhost:3001/public/uploads/products/${product.image}",
+            imageUrl: `http://localhost:3001/uploads/products/${product.image}`,
             status: 200
         })
     })
@@ -132,3 +114,14 @@ list: async function(req, res) {
 
       //<%=products[i].categoria.name%>     
 }, */
+
+/* let cat1 = await db.Products
+    .findAll({where: {category_id: 1}})
+
+    let cat2 = await db.Products
+    .findAll({where: {category_id: 2}})
+
+    let cat3 = await db.Products
+    .findAll({where: {category_id: 3}}) */
+
+    /* totalPorCategoria: {cat1, cat2, cat3}, */
