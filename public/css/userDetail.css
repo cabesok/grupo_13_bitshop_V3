@@ -79,9 +79,12 @@ margin-bottom: 20px;
  */
 
  .box-btn {
-display:flex;
-flex-direction: row;
-justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+justify-content: space-around;
+gap: 10px;
 align-items: center;
 text-align: center;
 margin: 10px;
@@ -126,13 +129,13 @@ button:hover {
     .description {
         width: 90%;
         min-height: auto;
-        padding: 5px;
+        
         text-align: center;
     }
 
 .name, .price {
     font-size: 30px;
-    margin: 2rem;
+    
 }
 
 .info {
@@ -146,7 +149,7 @@ button:hover {
     width: 300px;
     justify-content:center;
     position: relative;
-    padding: 10px;
+    padding: 5px;
 }
 
 button {

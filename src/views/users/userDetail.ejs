@@ -31,16 +31,20 @@
                        
                              
                        <a href="/user/userEdit/<%= user.id %>">
-                       <button>Editar</button>
+                       <button>Editar Usuario</button>
                        </a>
 
                        <form action="/user/delete/<%= user.id %>?_method=DELETE" method="post">
-                        <button type="submit">Eliminar</button>
+                        <button type="submit">Eliminar Usuario</button>
                         </form>
                         
                         <form action="/user/logout" method="post">
                             <button type="submit">Logout</button>
                             </form>
+                        
+                            <a href="/product/crear">
+                                <button>Crear Producto</button>
+                            </a>
 
                         
 

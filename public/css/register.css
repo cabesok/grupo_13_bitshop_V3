@@ -49,13 +49,15 @@ h1 {
   gap: 20px;
 }
 
-.formulario-label {
+.formulario-label,
+.form-btn label {
   display: block;
   font-weight: 700;
   padding: 10px;
   cursor: pointer;
   color: var(--font-colorpred);
 }
+
 
 .formulario-grupo-input {
   position: relative;
@@ -145,7 +147,6 @@ h1 {
   box-shadow: inset 300px 0 0 0 gold;
   color: #333333;
 }
-
 
 .formulario-mensaje-exito {
   font-size: 14px;
