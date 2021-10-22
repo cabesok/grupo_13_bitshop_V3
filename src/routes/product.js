@@ -31,6 +31,7 @@ router.get("/crear", productsController.crear);
 router.get("/buscar", productsController.buscar);
 router.get("/detail/:id", productsController.detail); 
 router.get("/edit/:id", editarProductoMiddleware, productsController.edit);
+router.get("/cart", productsController.cart);
 
 router.post("/crear", upload.single("image"), createProductMiddleware, productsController.guardar);
 router.post("/edit/:id", upload.single("image"), productsController.actualizar);

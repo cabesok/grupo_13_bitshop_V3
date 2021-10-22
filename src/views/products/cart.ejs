@@ -1,0 +1,68 @@
+<html lang="en">
+  
+  <%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/cart.css">
+    
+    <%- include ("../partials/header") %>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <main>
+        <div class="container-cart">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Carrito</h2>
+                    <form id="procesar-pago" action="#" method="post">
+
+                        <div id="carrito" class="form-group table-responsive">
+                            <div class="table" id="lista-compra">
+                                <div class="mini">
+                                    <div>
+                                        <div>
+                                            <h3>Subtotal: </h3>
+                                            <p id="subtotal"></p>
+                                        </div>
+                                        <div>
+                                            <h3>IVA: </h3>
+                                            <p id="igv"></p>
+                                        </div>
+                                        <div>
+                                            <h3>Total: </h3>
+                                            <p id="total"></p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btns justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="/" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <a href="/" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+    </section>
+ 
+ <%- include ("../partials/footer") %>
+    <script src="/js/carrito.js"></script>
+    <script src="/js/compras.js"></script>
+    <script src="/public/js/main.js"></script>

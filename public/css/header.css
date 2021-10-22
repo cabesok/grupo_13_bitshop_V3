@@ -1,140 +1,155 @@
 :root {
-    --gris: #49434f;
-    --tonic: gold;
-    --blue: #d3cce3;
-  }
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-     }
-  
- html {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  min-height: 100%;
-  position: relative;
- }
-
- body{
-   margin: 0;
-     
- }
-  
-  header {
-    background: white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  
-  a {
-    color: var(--gris);
-    text-decoration: none;
-  }
-  
-  /*--- RESPONSIVE BUTTON---*/
-  .menu-btn {
-    position: absolute;
-    cursor: pointer;
-    top: 23px;
-    right: 30px;
-    z-index: 1000;
-    display: none;
-  }
-  
-.container {
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  background:white;
-  box-shadow: 0px 0px 3px var(--gris);
+  --gris: #49434f;
+  --tonic: gold;
+  --blue: #d3cce3;
 }
-  .nav-main {
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20px;
-    padding: 1rem 1rem;
-    margin-left: 60px;
-    margin-top: 1rem;
-  }
-  /* NAV LEFT */
-  .nav-main ul {
-    display: flex;
-    list-style: none;
-  }
-  /* separamos entre sí los li*/
-  .nav-main ul li {
-    padding: 10px;
-  }
-  .nav-main a img {
-    width: auto;
-    height: 30px;
-  }
-  .nav-main ul li a {
-    padding: 5px;
-  }
-  /* ponemos una línea en los enlaces en hover*/
-  .nav-main ul li a:hover {
-    border-bottom: 2px solid var(--tonic);
-  }
-  /* lo posicionamos un el nivel 1 de flex con un margen para separarlo del logo*/
-  .nav-main ul.nav-menu-left {
-    flex: 1;
-    margin-left: 20px;
-  }
-  .nav-menu-user {
-    margin-right: 20px;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   }
 
+html {
+font-family: "PT Sans", sans-serif;
+font-size: 16px;
+min-height: 100%;
+position: relative;
+}
+
+body{
+ margin: 0;
+   
+}
+
+header {
+  background: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+a {
+  color: var(--gris);
+  text-decoration: none;
+}
+
+/*--- RESPONSIVE BUTTON---*/
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 23px;
+  right: 30px;
+  z-index: 1000;
+  display: none;
+}
+
+.container {
+width: 100%;
+height: 70px;
+position: absolute;
+background:white;
+box-shadow: 0px 0px 3px var(--gris);
+}
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  padding: 1rem 1rem;
+  margin-left: 60px;
+  margin-top: 1rem;
+}
+/* NAV LEFT */
+.nav-main ul {
+  display: flex;
+  list-style: none;
+}
+/* separamos entre sí los li*/
+.nav-main ul li {
+  padding: 10px;
+}
+.nav-main a img {
+  width: auto;
+  height: 30px;
+}
+.nav-menu ul li a {
+  padding: 5px;
   
+}
+/* ponemos una línea en los enlaces en hover*/
+.nav-main ul li a:after{
+  content:'';
+  display:block;
+  width:100%;
+  height:2px;
+  left:0;
+  bottom:0;
+  background:var(--tonic);
+  transform:scaleX(0);
+  transition: 1s ease;
+}
+
+.nav-main ul li a:hover:after {
+  transform:scaleX(1);
+}
+
+
+/* lo posicionamos un el nivel 1 de flex con un margen para separarlo del logo*/
+.nav-main ul.nav-menu-left {
+  flex: 1;
+  margin-left: 20px;
+}
+.nav-menu-user {
+  margin-right: 20px;
+}
+
+
 /*--------MQ navbar--------*/
 @media (max-width: 700px) {
-    .menu-btn {
-            display: block;
-    }
-    .menu-btn:hover {
-        opacity: 0,5;
-    }
-    .nav-main {
-      margin-left: 1rem;
-    }
-      .nav-main ul.nav-menu-left {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 45%;
-        height: 100vh;
-        border-right:0px;
-        padding: 80px 20px;
-        opacity: 1;
-        transform: translatex(-500px);
-        transition: transform 0.5s ease-in-out;
-        background: rgba(255, 255, 255, 0.9);;
-      }
-
-      .nav-main ul.nav-menu-left li {
-        padding: 20px;
-        font-size: 16px;
-          }
-          .nav-main ul.nav-menu-left li:hover {
-          font-weight: bold;
-              }
-
-      /* cuando tenga la clase show (JS) va a mostrar la barra */
-    .nav-main ul.nav-menu-left.show {
-        transform: translateX(-20px);
+  .menu-btn {
+          display: block;
+  }
+  .menu-btn:hover {
+      opacity: 0,5;
+  }
+  .nav-main {
+    margin-left: 1rem;
+  }
+    .nav-main ul.nav-menu-left {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 45%;
+      height: 100vh;
+      border-right:0px;
+      padding: 80px 20px;
+      opacity: 1;
+      transform: translatex(-500px);
+      transition: transform 0.5s ease-in-out;
+      background: rgba(255, 255, 255, 0.9);;
     }
 
-      .nav-main ul.nav-menu-user {
-          margin-right: 50px;
-      }
+    .nav-main ul.nav-menu-left li {
+      padding: 20px;
+      font-size: 16px;
+        }
+        .nav-main ul.nav-menu-left li:hover {
+        font-weight: bold;
+            }
+
+    /* cuando tenga la clase show (JS) va a mostrar la barra */
+  .nav-main ul.nav-menu-left.show {
+      transform: translateX(-20px);
+  }
+
+    .nav-main ul.nav-menu-user {
+        margin-right: 50px;
+    }
 
 
 }
