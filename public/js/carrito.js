@@ -26,7 +26,7 @@ class Carrito{
             }
         });
         if(productosLS === infoProducto.id){
-            alert("Ya está, Papu Gómez.")
+            alert("El producto ya se encuentra en el carrito")
         } else {
             this.insertarCarrito(infoProducto);
         }
