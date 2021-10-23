@@ -4,7 +4,7 @@ const methodOverride = require('method-override');
 const app = express();
 const session = require("express-session");
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
-const cors = require("cors")
+const cors = require("cors");
 
 // App Server
 app.set("port",process.env.PORT || 3001);

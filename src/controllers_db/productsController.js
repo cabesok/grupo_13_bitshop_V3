@@ -6,6 +6,8 @@ const {Op} = require("sequelize");
 
     
 let productsController = {
+    cart: (req, res) => res.render("products/cart", {style: "cart", title: "Shopping Cart"}),
+
     componentes: function(req, res) {
         db.Products.findAll({where: {
             category_id: 1

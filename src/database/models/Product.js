@@ -1,29 +1,31 @@
 module.exports=(sequelize, dataTypes) => {
 
     let alias = "Products";
+    
     let cols = {
-id:{
-    type: dataTypes.INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
-} ,
-name: {
-    type: dataTypes.STRING,
-    allowNull: false,
-},
-description: {
-    type: dataTypes.STRING,
-    allowNull: false,
-},
-price: {
-    type:dataTypes.INTEGER,
-    allowNull: false,
-},
-image: {
-    type:dataTypes.STRING
+        id:{
+            type: dataTypes.INTEGER,
+            primaryKey: true,
+            autoIncrement: true,
+        },
+        name: {
+            type: dataTypes.STRING,
+            allowNull: false,
+        },
+        description: {
+            type: dataTypes.STRING,
+            allowNull: false,
+        },
+        price: {
+            type:dataTypes.INTEGER,
+            allowNull: false,
+        },
+        image: {
+            type:dataTypes.STRING
 
-}
+        }
     }
+    
     let config = {
         tableName: "products",
         timestamps:false
@@ -36,6 +38,6 @@ image: {
             as: "categoria",
             foreignKey: "category_id"
         })
-}
-return Product;
+    }
+    return Product;
 }
