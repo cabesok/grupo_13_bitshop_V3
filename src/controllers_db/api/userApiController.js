@@ -1,21 +1,19 @@
 
 let db = require("../../database/models");
 
+
+
 module.exports = {
     
 
     all: function(req, res) {
         db.Users
-        .findAll()
+        .findAll({
+            include: [{association: "categoria"}]
+        })
         .then(function(users) {
 
-             /* users = users.map((user, i) => {
-                delete user[i].password;
-                user[i].detail = 'http://localhost:3001/userApi/${user[i].id}';
-
-                return user
-
-            }) */
+             
             users = users.map((user, i) => {
                 user = {
                 id: user.id,
@@ -25,7 +23,8 @@ module.exports = {
                 email: user.email,
                 //password: user.password,
                 image: `http://localhost:3001/uploads/users/${user.image}`,
-                detail: `http://localhost:3001/userApi/${user.id}` 
+                detail: `http://localhost:3001/userApi/${user.id}`,
+                categoria: user.categoria.title
             }
                 return user
             })

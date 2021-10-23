@@ -38,7 +38,7 @@ function LastProduct (props) {
 								</div>
 								<div class="card-body">
 									<div class="text-center">
-                                    <img class="img-fluid px-3 px-sm-4 mt-3 bm-4" style={{width:'25rem'}} src={`http://localhost:3001/uploads/products/${lastProduct.image}`} alt=""/>
+                                    <img class="img-fluid px-3 px-sm-4 mt-3 bm-4" style={{width:'25rem'}} src={lastProduct.image} alt=""/>
 									</div>
 									<p>{lastProduct.description}</p>
 									<a class="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver producto</a>

@@ -21,11 +21,11 @@ title: {
 
     const UserCategory = sequelize.define(alias, cols, config);
 
-    /* UserCategory.associate = function(models) {
+    UserCategory.associate = function(models) {
         UserCategory.hasMany(models.Users, {
             as: "usuarios",
-            fereignKey: "category_id"
-        })} */
+            foreignKey: "category_id"
+        })}
 
 return UserCategory;
 }
