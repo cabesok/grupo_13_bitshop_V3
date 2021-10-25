@@ -1,0 +1,106 @@
+.container-cart{
+    margin:0;
+    padding:0;
+    min-height:24.5rem;
+    margin-bottom:20px;
+}
+
+.col > h2{
+    display:flex;
+    justify-content: center;
+}
+
+#carrito{
+    background:rgb(235, 235, 235);
+    margin:2rem;
+    padding:1rem;
+    border-radius:5px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mini > div{
+    border-bottom:1px solid rgb(187, 186, 186);
+    margin-bottom:25px;
+}
+
+.mini > div:last-child{
+    border-bottom:none;
+    margin-bottom:0;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mini > div:last-child > div{
+    display:flex;
+    align-items: center;
+}
+
+.mini > div:last-child > div > h3{
+    font-size:bolder;
+    margin-right:5px;
+}
+
+.mini > div > figure, .mini > div > div, .mini > div > p{
+    display:flex;
+    justify-content: center;
+    margin-bottom:5px;
+}
+
+.mini > div > div:last-child{
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom:2px;
+}
+
+.mini > div > figure > img{
+    height:150px;
+    width:150px;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius:25%;
+}
+
+.hello input{
+    width:40px;
+    text-align:center;
+}
+
+.btns{
+    display:flex;
+    justify-content: space-around;
+}
+
+.btn-success{
+    background:black;
+    color:white;
+    padding:3px;
+    border-radius:5%;
+}
+
+@media (min-width: 850px) {
+    .mini > div{
+        display:flex;
+        margin-bottom:5px;
+    }
+
+    .mini > div{
+        margin-top:15px;
+    }
+
+    .mini > div > figure{
+        position:relative;
+        bottom:5px;
+        margin-right:5px;
+    }
+
+    .mini > div > div, .mini > div > p{
+        display:flex;
+        align-items: center;
+        margin: 0 2%;
+    }
+    
+    .borrar-producto{
+        position:absolute;
+        right:60px;
+    }
+}

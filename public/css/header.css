@@ -79,9 +79,27 @@
     padding: 5px;
   }
   /* ponemos una línea en los enlaces en hover*/
+
+  /* .nav-main ul li a:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:2px;
+    left:0;
+    bottom:0;
+    background:var(--tonic);
+    transform:scaleX(0);
+    transition: 1s ease;
+  }
+  
+  .nav-main ul li a:hover:after {
+    transform:scaleX(1);
+  } */
+
   .nav-main ul li a:hover {
     border-bottom: 2px solid var(--tonic);
   }
+
   /* lo posicionamos un el nivel 1 de flex con un margen para separarlo del logo*/
   .nav-main ul.nav-menu-left {
     flex: 1;
