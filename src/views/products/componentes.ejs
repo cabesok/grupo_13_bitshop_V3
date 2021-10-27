@@ -8,7 +8,7 @@
     <%- include ("../partials/header") %>
  <div class="showcase-componentes"></div>
 
-    <section class= "container-productos">
+    <section class= "container-productos" id="lista-productos">
       <% for (let i = 0; i < products.length; i++) { %>
         
         <article class="producto">
@@ -16,6 +16,7 @@
           <h4><%= products[i].name %></h4>
           <p>$ <%= products[i].price %></p>
           <a href="/product/detail/<%= products[i].id %>">Ver</a>
+          <button class="btn btn-primary agregar-carrito" data-id="<%= products[i].id %>">Agregar al carrito</button>
         </article>
         
         <% } %>
@@ -25,6 +26,8 @@
     
  <%- include ("../partials/footer") %>
 
+    <script src="/js/carrito.js"></script>
+    <script src="/js/pedido.js"></script>
     <script src="/public/js/main.js"></script>
   </body>
 </html>

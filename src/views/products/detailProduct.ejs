@@ -23,7 +23,9 @@
                   <p class="info"><%= product.description %></p>
                   <p class="price">$ <%= product.price %> </p>
                   <div class="box-btn">
-                       <button class= "Comprar" type="submit">Comprar</button>
+                       <!-- <button class= "Comprar" type="submit">Agregar al carrito</button> -->
+                       <!-- <button class="btn btn-primary agregar-carrito" data-id="<%= product.id %>">Agregar al carrito</button> -->
+                    
                              
                        <a href="/product/edit/<%= product.id %>">
                        <button>Editar</button>
@@ -38,9 +40,8 @@
     
 </main>
 
-    
-    <!-- <%- include ("../partials/footer") %>
- -->
+    <!-- <script src="/js/carrito.js"></script>
+    <script src="/js/pedido.js"></script> -->
     <script src="/public/js/main.js"></script>
 </body>
 </html>

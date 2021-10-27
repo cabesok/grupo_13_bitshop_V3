@@ -67,7 +67,7 @@ module.exports = {
                 email: req.body.email,
                 password: bcrypt.hashSync(req.body.password, 10),
                 image: req.file.filename, // req.file.image ?
-                category_id: req.body.category
+                category_id: req.body.email.includes("@bitshop") ? 1 : 2
             })
             /* await */ res.redirect("/user/login");
             /* .then(data => res.redirect("/")); */

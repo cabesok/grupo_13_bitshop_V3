@@ -4,6 +4,20 @@ let db = require("../../database/models");
 
 module.exports = {
 
+/* list: async function(req, res) {
+
+    db.Products
+    .findAll({
+        include: [{association:"categoria"}]
+    })
+    .then(function(products) {
+    return res.status(200).json({
+        total: products.length,
+        data: products,
+        status: 200
+    })
+})
+}, */
 list: async function(req, res) {
 
     db.Products
@@ -11,6 +25,21 @@ list: async function(req, res) {
         include: [{association:"categoria"}]
     })
     .then(function(products) {
+
+        products = products.map((product, i) => {
+            product = {
+                id: product.id,
+                name: product.name,
+                description: product.description,
+                price: product.price,
+                image: `http://localhost:3001/uploads/products/${product.image}`,
+                detail: `http://localhost:3001/productApi/${product.id}`,
+                categoria: product.categoria.title
+        }
+            return product
+        })
+
+
     return res.status(200).json({
         total: products.length,
         data: products,
